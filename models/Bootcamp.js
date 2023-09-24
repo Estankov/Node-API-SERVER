@@ -94,6 +94,10 @@ const BootcampSchema = new mongoose.Schema({
         type: Boolean,
         default: false
       },
+      avarageCost: {
+        type: Number,
+        defaul: false
+      },
       createdAt: {
         type: Date,
         default: Date.now
