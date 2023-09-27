@@ -77,7 +77,7 @@ exports.getBootcamps = asyncHandler(async (req, res, next) => {
         count: bootcamps.length,
         pagination,
         data: bootcamps
-    })
+    });
 
 });
 
@@ -93,7 +93,7 @@ exports.getBootcamp = asyncHandler(async (req, res, next) => {
     res.status(201).json({
         sucess: true, 
         data: bootcamp
-    })
+    });
 
 });
 
@@ -106,7 +106,7 @@ exports.createBootcamp = asyncHandler(async (req, res, next) => {
     res.status(201).json({
         sucess: true,
         data: bootcamp
-    })
+    });
 
 });
 
@@ -127,7 +127,7 @@ exports.updateBootcamp = asyncHandler(async (req, res, next) => {
     res.status(200).json({
         sucess: true,
         data: bootcamp
-    })
+    });
 
 });
 
@@ -147,7 +147,7 @@ exports.deleteBootcamp = asyncHandler(async (req, res, next) => {
     res.status(200).json({
         sucess: true,
         data: {}
-    })
+    });
 
 });
 
@@ -177,6 +177,6 @@ exports.getBootcampsInRadius = asyncHandler(async (req, res, next) => {
         sucess: true,
         count: bootcamps.length,
         data: bootcamps
-    })
+    });
 
 });
