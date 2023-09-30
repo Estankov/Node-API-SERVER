@@ -6,6 +6,7 @@ const colors = require('colors');
 const errorHandler = require('./middleware/error')
 const connectDB = require('./config/db')
 const fileupload = require('express-fileupload');
+const cookieParser = require('cookie-parser');
 
 // load env
 dotenv.config({ path: "./config/config.env" });
@@ -22,6 +23,9 @@ const app = express();
 
 // Body parser
 app.use(express.json());
+
+// Cooloe parser
+app.use(cookieParser());
 
 // Dev logger middleware
 if (process.env.NODE_ENV == 'development') {
